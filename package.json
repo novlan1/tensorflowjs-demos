@@ -1,0 +1,36 @@
+{
+  "name": "js-ml-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": ".",
+  "dependencies": {
+    "@tensorflow-models/speech-commands": "^0.4.0",
+    "@tensorflow/tfjs": "^2.8.1",
+    "@tensorflow/tfjs-node": "^1.2.9",
+    "@tensorflow/tfjs-vis": "^1.4.3",
+    "eslint-config-rookie": "0.0.1",
+    "vega-embed": "^6.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "html-webpack-plugin": "^4.5.0",
+    "loader-utils": "^2.0.0",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config scripts/webpack.config.js",
+    "lint": "eslint --ext .js .",
+    "lint:fix": "eslint --fix --ext .js ."
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
