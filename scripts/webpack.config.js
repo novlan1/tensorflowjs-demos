@@ -7,7 +7,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const folder = 'iris'
 // const folder = 'mnist'
 // const folder = 'linear-regression'
-const folder = 'mobilenet';
+// const folder = 'mobilenet';
+// const folder = 'logistic-regression';
+// const folder = 'speech';
+// const folder = 'speech-cn';
+const folder = 'slider';
+// const folder = 'brand';
+// const folder = 'brand-predict';
 
 module.exports = {
   entry: path.resolve(__dirname, `../src/${folder}/script.js`),
@@ -27,7 +33,7 @@ module.exports = {
           {
             loader: 'replace-host-loader',
             options: {
-              replace: 'https://123.com',
+              replace: 'https://novlan1.github.io/tensorflowjs-demos/data',
             },
           },
         ],
@@ -51,6 +57,7 @@ module.exports = {
   externals: {
     '@tensorflow/tfjs': 'tf',
     '@tensorflow/tfjs-vis': 'tfvis',
+    '@tensorflow-models/speech-commands': 'speechCommands',
   },
   output: {
     path: path.resolve(__dirname, `../docs/${folder}/`),

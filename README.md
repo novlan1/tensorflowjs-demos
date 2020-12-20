@@ -1,6 +1,6 @@
 ## tensorflowjs-demos
 
-[在线预览]()
+[在线预览](https://novlan1.github.io/tensorflowjs-demos/)
 
 ### http-server的使用
 
@@ -87,7 +87,7 @@ L2正则化相当于权重衰减
 2. **扩大感受野，减少计算量**
 3. 池化层没有权重要训练
 
-### [安装tensorflow_converter](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter)
+### 安装tensorflow_converter
 
 1. 先安装Conda
    - 搜索引擎搜索：`conda清华`，下载合适的包安装，可以选择mini版本，轻量，够用。
@@ -97,6 +97,7 @@ L2正则化相当于权重衰减
 3. 使用 python 虚拟环境安装`tensorflow_converter`，其实是安装全部的`tensorflowjs`
    - `pip install tensorflowjs` 
 
+参考：[github链接](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter)
 
 ### 迁移学习
 
@@ -216,3 +217,10 @@ var ele = document.elementFromPoint(touch.pageX, touch.pageY);
 //根据坐标直接返回元素
 // document.elementFromPoint()
 ```
+
+
+
+### TODO
+
+1. 编写`webpack-plugin`自动插入`tfjs/tfjs-vis`的CDN链接，而不是手动，并且删除`script.js`标签
+2. 打包文件，报错TypeError: t.backend is not a function(speech-commands.min.js:17)
